@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Foodi Login</title>
+    <style>
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background-size: cover;
+            margin: 0;
+            padding: 0;
+        }
+
+        .container {
+            background-color: rgba(255, 255, 255, 0.95);
+            max-width: 400px;
+            margin: 100px auto;
+            padding: 30px;
+            border-radius: 15px;
+            box-shadow: 0 8px 16px rgba(0, 0, 0, 0.25);
+        }
+
+        h2 {
+            text-align: center;
+            color: #ff5722;
+            margin-bottom: 20px;
+        }
+
+        table {
+            width: 100%;
+        }
+
+        td {
+            padding: 10px 0;
+        }
+
+        input[type="text"],
+        input[type="password"] {
+            width: 100%;
+            padding: 10px;
+            border-radius: 8px;
+            border: 1px solid #ccc;
+            box-sizing: border-box;
+        }
+
+        input[type="submit"] {
+            width: 100%;
+            background-color: #e64a19;
+            color: white;
+            padding: 12px;
+            border: none;
+            border-radius: 8px;
+            cursor: pointer;
+            font-size: 16px;
+            transition: background-color 0.3s ease;
+        }
+
+        input[type="submit"]:hover {
+            background-color: #e64a19;
+        }
+
+        label {
+            font-weight: bold;
+        }
+
+        .register-link {
+            text-align: center;
+            margin-top: 20px;
+        }
+
+        .register-link a {
+            color: #ff5722;
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        .register-link a:hover {
+            text-decoration: underline;
+        }
+
+        @media screen and (max-width: 480px) {
+            .container {
+                margin: 50px 20px;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <marquee><h1>Hey Foodi, Please Login...!</h1></marquee>
+
+    <div class="container">
+        <h2>🍔 Login to Foodi</h2>
+
+        <form action="callingLoginServlet" method="post">
+            <table>
+                <tr>
+                    <td><label>Username</label></td>
+                    <td><input type="text" name="username" required></td>
+                </tr>
+
+                <tr>
+                    <td><label>Password</label></td>
+                    <td><input type="password" name="password" required></td>
+                </tr>
+
+                <tr>
+                    <td colspan="2"><input type="submit" value="Login"></td>
+                </tr>
+            </table>
+        </form>
+
+        <div class="register-link">
+            🧁 Don't have an account? <a href="register.html">Register here</a>
+        </div>
+    </div>
+
+</body>
+</html>

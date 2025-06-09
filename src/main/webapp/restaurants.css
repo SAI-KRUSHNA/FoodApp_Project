@@ -1,0 +1,105 @@
+/* Base styles */
+body {
+    font-family: 'Helvetica Neue', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f5f3f9;
+}
+
+/* Header */
+header {
+    background-color: orange;
+    color: white;
+    font-size: 2rem;
+    font-weight: 600;
+    text-align: center;
+    padding: 1rem;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+
+
+
+/* Grid container for restaurant cards */
+.restaurants-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    gap: 2rem;
+    padding: 2rem 5%;
+    max-width: 1400px;
+    margin: 0 auto;
+}
+
+/* Restaurant card */
+.restaurant-card {
+    background-color: white;
+    border-radius: 12px;
+    overflow: hidden;
+    transition: transform 0.2s ease, box-shadow 0.3s ease;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.06);
+    cursor: pointer;
+}
+
+.restaurant-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 6px 16px rgba(0,0,0,0.1);
+}
+
+/* Clickable link */
+.restaurant-link {
+    text-decoration: none;
+    color: inherit;
+    display: block;
+}
+
+/* Restaurant image */
+.restaurant-image {
+    width: 100%;
+    height: 180px;
+    object-fit: cover;
+    border-bottom: 1px solid #eee;
+}
+
+/* Details section */
+.restaurant-details {
+    padding: 1rem;
+}
+
+.restaurant-name {
+    font-size: 1.2rem;
+    font-weight: 600;
+    color: #e64a19;
+    margin-bottom: 0.5rem;
+}
+
+.rating {
+    font-size: 0.9rem;
+    color: #e64a19;
+    margin-bottom: 0.5rem;
+    display: flex;
+    align-items: center;
+    gap: 4px;
+}
+
+.info {
+    font-size: 0.85rem;
+    color: #666;
+    line-height: 1.4;
+}
+
+/* Responsive image for better look */
+@media (max-width: 768px) {
+    .restaurant-image {
+        height: 150px;
+    }
+}
+
+@media (max-width: 480px) {
+    .restaurant-name {
+        font-size: 1rem;
+    }
+
+    .rating,
+    .info {
+        font-size: 0.8rem;
+    }
+}

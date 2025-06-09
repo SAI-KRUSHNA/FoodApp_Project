@@ -1,0 +1,198 @@
+/* Reset and base styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Helvetica Neue', sans-serif;
+}
+
+/* General body styles */
+body {
+  background-color: #fafafa;
+  padding: 20px;
+  color: #333;
+}
+
+h1 {
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+/* Main cart container */
+.cart-container {
+  width: 90%;
+  max-width: 1000px;
+  margin: auto;
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0,0,0,0.1);
+}
+
+/* Individual cart item block */
+.cart-item {
+  display: flex;
+  flex-direction: row;
+  gap: 20px;
+  align-items: flex-start;
+  margin-bottom: 20px;
+  border-bottom: 1px solid #e0e0e0;
+  padding-bottom: 20px;
+  flex-wrap: wrap;
+  position: relative;
+}
+
+/* Image + name container */
+.item-img-name {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 140px;
+}
+
+/* Product image */
+.item-image {
+  width: 120px;
+  height: 120px;
+  object-fit: cover;
+  border-radius: 8px;
+  border: 1px solid #ddd;
+}
+
+/* Product name */
+.item-name {
+  margin-top: 8px;
+  font-size: 16px;
+  font-weight: bold;
+  text-align: center;
+  color: #333;
+}
+
+/* Details section */
+.cart-item-details {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+/* Info text (price, quantity, total) */
+.cart-item-details p {
+  margin: 5px 0;
+  color: #444;
+}
+
+/* Quantity controls */
+.quantity-controls {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin-top: 10px;
+}
+
+/* Quantity buttons */
+.quantity-btn {
+  background-color: #4CAF50;
+  color: white;
+  border: none;
+  padding: 6px 12px;
+  font-size: 16px;
+  cursor: pointer;
+  border-radius: 5px;
+  transition: background-color 0.3s ease;
+}
+
+.quantity-btn:hover {
+  background-color: orange;
+}
+
+/* Display current quantity */
+.quantity-controls p {
+  margin: 0;
+  font-weight: bold;
+  font-size: 16px;
+  min-width: 20px;
+  text-align: center;
+}
+
+/* Remove button styled like a trash icon */
+.remove-btn {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  background-color: transparent;
+  color: #ff4d4f;
+  font-size: 16px;
+  border: none;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  font-weight: bold;
+  transition: color 0.3s ease;
+}
+
+.remove-btn::before {
+  content: "\1F5D1"; /* Trash bin symbol */
+  font-size: 16px;
+}
+
+.remove-btn:hover {
+  color: #d60000;
+}
+
+/* Add more items link */
+.add-more-items a {
+  display: inline-block;
+  margin-top: 15px;
+  padding: 10px 20px;
+  background-color: orange;
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+  border-radius: 5px;
+  transition: background-color 0.3s ease, color 0.3s ease;
+  
+}
+
+.add-more-items a:hover {
+  background-color: green;
+  color: #fff;
+}
+
+
+
+
+/* Wrapper for total and checkout button */
+.total-checkout-wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  margin-top: 20px;
+  gap: 10px;
+}
+
+/* Total amount text */
+.total-checkout-wrapper h2 {
+  font-size: 22px;
+  color: #333;
+  margin: 0;
+}
+
+/* Proceed to Checkout button */
+
+.checkout-btn {
+  padding: 12px 24px;
+  background-color: orange;
+  color: white;
+  font-size: 16px;
+  border: none;
+  border-radius: 8px;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.checkout-btn:hover {
+  background-color: green;
+  transform: scale(1.05);
+}
+

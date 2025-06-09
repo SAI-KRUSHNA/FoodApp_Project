@@ -1,0 +1,92 @@
+/* menu.css */
+
+body {
+    margin: 0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #fefefe;
+}
+
+header {
+    background-color: #f37c3a;
+    color: white;
+    font-size: 28px;
+    text-align: center;
+    padding: 20px 0;
+    font-weight: bold;
+    border-bottom: 1px solid #ccc;
+}
+
+.menu-list {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 24px;
+    padding: 30px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.menu-card {
+    background: white;
+    border-radius: 16px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.08);
+    overflow: hidden;
+    transition: transform 0.2s ease;
+}
+
+.menu-card:hover {
+    transform: scale(1.02);
+}
+
+.menu-info {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 16px;
+}
+
+.menu-image {
+    width: 100%;
+    height: 160px;
+    object-fit: cover;
+    border-radius: 16px 16px 0 0;
+}
+
+.menu-details {
+    padding: 12px;
+    text-align: center;
+}
+
+.item-name {
+    font-weight: bold;
+    font-size: 18px;
+    margin-bottom: 4px;
+    color: #333;
+}
+
+.item-desc {
+    color: #6a6a6a;
+    font-size: 14px;
+    margin-bottom: 8px;
+}
+
+.item-price {
+    font-weight: bold;
+    font-size: 16px;
+    color: #2e7d32;
+    margin-bottom: 10px;
+}
+
+.add-to-cart-btn {
+    padding: 10px 20px;
+    background-color: orange;
+    color: white;
+    border: none;
+    border-radius: 20px;
+    font-weight: bold;
+    font-size: 14px;
+}
+
+.add-to-cart-btn:hover {
+    background-color: green;
+    transform: scale(1.05);
+}
