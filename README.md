@@ -6,7 +6,6 @@ This is a Java Servlet-based web application for restaurant and food order manag
 - User Registration/Login
 - Menu Display
 - Order Placement
-- Admin Panel (optional)
 
 ## Tech Stack
 - Java EE (Servlets + JSP)
